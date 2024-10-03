@@ -1,0 +1,609 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+.topblock{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    padding-bottom: 7px;
+    border-bottom: 1px solid #d7cfcf;
+    
+}   
+.topblock_logo{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 3px;
+    right: 1px;
+}
+.topblock_elm{
+    display:flex;
+    width: 70px;
+    justify-content: space-between;
+    padding: 9px;
+    align-items: flex-end;
+}
+.topblock_elm1 img{
+    padding-left: 6px;
+    padding-top: 6px;
+
+}
+.topblock_elm img{
+    width: 20px;
+}
+.topblock_logo img{
+    max-width: 106px;
+    padding: 10px;
+    padding-top: 9px;
+    
+}
+.azureHeding{
+    display: flex;
+    padding: 10px;
+    padding-left: 8px;
+    padding-bottom: 5px;
+    
+}
+.azureHeading_arow button{
+    background: white;
+    border: none;
+}
+.azureHeading_arow img{
+    width: 14px;
+}
+.coverimg img{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    aspect-ratio: 7/4;
+}
+.coverimg{
+    margin-left: -10px;
+}
+.azureHeading_word span{
+    font-weight: 700;
+    padding-right: 3px;
+    
+}
+.introBlock{
+    padding-top: 30px;
+    padding-right: 10px;
+    padding-left: 10px;
+
+    /* background: linear-gradient(to bottom, #f5f1f1, #99a9de); */
+ 
+    background-image: url('img/bacground/Mobile-product-BG-2x');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.introBlock_elm{
+    font-size: 12px;
+}
+.introBlock_elm1{
+    font-size: 33px;
+    font-weight: 500;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.introBlock_elmb{
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+.introBlock_elmb button{
+    width: 100%;
+    height: 52px;
+    border-radius: 10px;
+    border: none;
+    background: #0078d4;
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+}
+.introBlock_elm-foot{
+    display: flex;
+    justify-content: space-between;
+    color: blue;
+    font-weight: 400;
+    padding: 20px;
+    padding-bottom: 10px;
+    border-bottom: 4px solid blue;
+}
+.introBlock_elm-foot-arow img{
+     width: 15px;
+}
+.FeaturedBlock{
+    background-image: url('img/bacground/Mobile-feature-BG-2x-1');
+    padding-top: 40px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.FeaturedBlock_elm{
+    padding-right: 11px;
+    padding-left: 11px;
+}
+.FeaturedBlock_elm1{
+    margin: 10px;
+    background:white ;
+    border-radius: 19px;
+
+}
+.FeaturedBlock_head1{
+   padding-left: 20px;
+}
+.FeaturedBlock_Head{
+padding: 20px;
+}
+.FeaturedBlock_Head span{
+    font-size: 24px;
+    font-weight: 500;
+
+}
+.FeaturedBlock_head1 span{
+    font-size: 12px;
+}
+.FeaturedBlock_elm1-image{
+    padding-top: 10px;
+}
+.FeaturedBlock_elm1-image img{
+    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+
+}
+.FeaturedBlock_elm1-main{
+    padding: 16px;
+}
+.FeaturedBlock_elm1-span{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 500;
+}
+.FeaturedBlock_elm1-span span{
+    font-size: 22px;
+ 
+}
+.FeaturedBlock_elm1-forword{
+    padding-top: 32px;
+    display: flex;
+    align-items: center;
+}
+.FeaturedBlock_elm1-forword img{
+    padding: 10px;
+    background: #0078d4;
+    border-radius: 7px;
+    width: 37px;
+}
+.FeaturedBlock_elm1-forword span{
+    padding-left: 7px;
+}
+.solutionsBlock{
+    background-image: url('img/bacground/Mobile-product-BG-2x');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 0px 16px;
+    padding-bottom: 40px;
+} 
+.solutionsBlock_elm{
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+.solutionsBlock_elm1 button{
+    background: #0078d4;
+    color: white;
+    border: none;
+    font-size: 16px;
+    height: 40px;
+    border-radius: 20px;
+    max-width: 100%;
+    margin: 20px;
+    font-weight: 600;
+    
+
+    
+}
+.solutionsBlock_elm1 button span{
+    padding: 10px;
+}
+.solutionsBlock_elm2 button{
+    background: #91bbdb;
+    color: rgb(28, 41, 225);
+    border: none;
+    font-size: 16px;
+    height: 40px;
+    border-radius: 20px;
+    max-width: 100%;
+    margin: 20px;
+    font-weight: 600;
+    
+
+    
+}
+.solutionsBlock_elm2 button span{
+    padding: 10px;
+}
+.solutionsBlock-head{
+    font-size: 12px;
+    padding-top: 20px;
+}
+.solutionsBlock_elm-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 49px;
+}
+.solutionsBlock_elm-head img{
+    width: 16px;
+    height: 16px;
+}
+.solutionsBlock_elm-image img{
+    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 20px;
+}
+.solutionsBlock_elm-button1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 0px;
+    border-bottom: 1px solid grey;
+    border-top: 1px solid grey;
+
+}
+.solutionsBlock_elm-button1 img{
+    width: 16px;
+}
+.solutionsBlock_elm-sentBlock{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    padding-bottom: 30px;
+}
+.solutionsBlock_elm-ancor{
+    padding-bottom: 20px;
+}
+/* //////////// */
+.productBlock{
+    background-image: url('img/bacground/Mobile-product-BG-2x.avif');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.productBlock-head{
+    font-size: 12px;
+    padding-bottom: 20px;
+}
+.productBlock-Head1{
+    font-size: 24px;
+    padding-bottom: 10px;
+}
+.productBlock_elm{
+    background-image: url('img/351994-Desktop-CardGrid-ProductandServices-PromoCard-320x592.avif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    object-fit: cover;
+    border-radius: 15px;
+    
+
+    /* height: 100%; */
+
+
+}
+.productBlock_elm1{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 70%;
+    padding: 20px;
+    color: white;
+}
+.productBlock_elm-head{
+    font-size: 24px;
+}
+.productBlock_elm-button{
+    font-size: 15px;
+    width: 100%;
+   
+}
+.productBlock_elm-button button{
+    background: #91bbdb;
+    color:black;
+    border: none;
+    height: 52px;
+    width: 100%;
+    border-radius: 8px;
+    font-size: 15px;
+}
+.productBlock_elm2{
+    padding-top: 20px;
+}
+.productBlock_elm-box{
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border-radius: 15px;
+    row-gap: 20px;
+    padding: 20px;
+}
+.productBlock_elm-box-image img{
+    box-shadow:1px 2px 5px 0px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    padding: 10px;
+    width: 48px;
+    height: 48px;
+}
+.gatnerBlock{
+    background-image: url('img/bacground/gater.avif');
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 20px;
+    padding-top: 73px;
+    padding-bottom: 48px;
+    
+}
+.gatnerBlock_elm{
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.5);
+}
+.gatnerBlock_elm-image img{
+    object-fit:cover;
+    max-width:100%;
+    max-height: 100%;
+    border-radius: 10px;
+}
+.gatnerBlock_elm2{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    row-gap: 30px;
+    padding-top: 40px;
+    align-items: center;
+}
+.gatnerBlock_elm2-text{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.gatnerBlock_elm2-text-head{
+    font-size: 24px;
+    font-weight:600;
+}
+.gatnerBlock_elm2-text-sent{
+    font-size: 18px;
+    line-height: 30px;
+}
+.gatnerBlock_elm2-button{
+    font-size: 15px;
+    width: 100%;
+   
+}
+.gatnerBlock_elm2-button button{
+    color: white;
+    background: #0078d4;
+    width: 100%;
+    height: 52px;
+    border: none;
+    border-radius: 10px;
+    
+
+}
+/* ////////////////////////// */
+.roleBlock{
+    background-image:url('img/bacground/Mobile-Interactive-Demo-BG-2x.webp') ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 40px;
+    padding: 0px 16px;
+}
+.roleBlock_elm-image img{
+    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
+
+}
+.roleBlock_elm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 16px;
+    padding-top: 48px;
+}
+.roleBlock_elm-head{
+    font-size: 12px;
+    margin-bottom: 12px;
+}
+.roleBlock_elm-head1{
+    font-size: 28px;
+    width: 100%;
+    text-align: center;
+}
+.roleBlock_elm-head1 span{
+    width: 100%;
+}
+.roleBlock_elm1{
+    display: flex;
+    overflow: auto;
+    white-space: nowrap;
+    padding:8px 0px 8px 8px;
+}
+.roleBlock_elm1-button button{
+    background:white;
+    border: none;
+    height: 52px;
+    padding: 12px 16px 16px;
+    font-size: 16px;
+    width: 188px;
+    text-align: start;
+    box-shadow:1px 2px 5px 0px rgba(0, 0, 0, 0.5) ;
+
+}
+.roleBlock_elm2 .FeaturedBlock_elm1-forword{
+    padding-top: 0px;
+    font-size: 14;
+}
+.roleBlock_elm2{
+    padding: 24px 0px 48px;
+}
+.roleBlock_elm2-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+}
+.roleBlock_elm2-sent{
+    font-size: 20px;
+    text-align:center;
+}
+.roleBlock_elm-image{
+    padding: 16px;
+    margin: 24px 0px 0px;
+}
+.roleBlock_elm-image img{
+    border-radius: 10px;
+}
+/* //////////////////////////// */
+.reagionBlok{
+    background-image: url('img/bacground/Desktop-AzureRegions-2x.avif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.reagionBlok_elm-head{
+    font-size: 32px;
+    text-align: center;
+
+}
+.reagionBlok_elm-head span{
+    color: white;
+
+
+}
+.reagionBlok_elm-head1{
+    font-size:16px;
+    text-align: center;
+    margin: 16px 0px 0px;
+    padding: 0px 16px;
+}
+.reagionBlok_elm-head1 span{
+    color: white;
+    line-height: 30px;
+}
+.reagionBlok_elm{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 56px 16px;
+
+   
+}
+.reagionBlok_elm .productBlock_elm-button{
+    margin-top: 30px;
+}
+/* //////////////////////// */
+.storieBlock{
+    background-image: url('img/bacground/customer\ story\ background.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 48px 16px;
+}
+.storieBlock_elm-head{
+    font-size: 12px;
+    margin: 0px 0px 12px;
+}
+.storieBlock_elm{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -.25rem;
+    margin-left: -.25rem;
+}
+.storieBlock_elm-head1{
+    font-size: 24px;
+}
+.storieBlock_elm1-image{
+    padding: 8px;
+    padding-bottom: 0px;
+}
+.storieBlock_elm1-image img{
+    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+}
+.storieBlock_elm1{
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 24px;
+    width: 91vw;
+}
+.storieBlock_elm1-block{
+    padding: 16px;
+}
+.storieBlock_elm1-blockSub-image img{
+    border: 1px solid rgb(183, 175, 175);
+    border-radius: 10px;
+}
+.storieBlock_elm1-blockSub{
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+.storieBlock_elm1-blockSub-sent{
+    font-size: 20px;
+}
+.storieBlock_elm1-block{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+}
+.storieBlock_elm1-blockLink{
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+}
+.storieBlock_elm1-blockLink-link{
+    display: flex;
+    gap: 0.5rem;
+    font-size: 14px;
+}
+.storieBlock_elm1-blockLink-elm{
+    display: flex;
+    /* --block-slim-justify: flex-start; */
+    /* --block-slim-flex-direction: row; */
+    flex-wrap: wrap;
+
+}
+
+.storieBlock-flexBlock{
+    display: flex;
+    overflow: auto;
+    flex-direction: row;
+    gap: 20px;
+    
+}
+
+
