@@ -43,32 +43,40 @@ span {
 }
 .topblock_elm{
     display:flex;
-    width: 70px;
+    width: 60px;
     justify-content: space-between;
-    padding: 9px;
+    /* padding: 9px;
+    padding-top: 11px; */
     align-items: flex-end;
+    margin-left: 15px;
+    margin-top:5px ;
+    /* height: 47px; */
+
 }
 .topblock_elm1 img{
     padding-left: 6px;
     padding-top: 6px;
 
 }
-.topblock_elm2{
-    transform: rotate(90deg);
+.topblock_elm1-box1{
+    /* transform: rotate(90deg); */
+    padding-bottom: 1px;
    
 }
 .topblock_elm1::before{
-    font-family: "MWF-MDL2";
+    font-family:'mdl2';
     content: "";
     font-size:larger;
-    font-weight: bolder;
+    font-size: 20px;
+  
 
 }
 .topblock_elm2::before {
-    font-family: "MWF-MDL2";
+    font-family: 'mdl2';
     content: '';
     font-size: 16px;
-    margin: left 2px;
+    margin-bottom: 2px;
+    /* margin: left 2px; */
 }
 .topblock_elm img{
     width: 20px;
@@ -82,11 +90,12 @@ span {
 .azureHeding{
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 8px;
     padding: 10px;
-    padding-left: 15px;
-    padding-bottom: 5px;
+    padding-left: 16px;
+    padding-bottom: 9px;
     font-size: 15px;
+    height: 33px;
     
 }
 .azureHeading_arow button{
@@ -95,12 +104,14 @@ span {
 }
 .azureHeading_arow img{
     width: 14px;
+    padding-top: 3px;
 }
 .coverimg img{
     max-width: 100%;
     max-height: 100%;
     object-fit: cover;
     /* aspect-ratio: 7/4; */
+    padding-top: 1px;
 }
 .coverimg{
     max-width: 100%;
@@ -110,6 +121,7 @@ span {
 .azureHeading_word span{
     font-weight: 600;
     padding-right: 3px;
+    font-family:'semi_bold';
     
 }
 .introBlock{
@@ -120,7 +132,7 @@ span {
 
     /* background: linear-gradient(to bottom, #f5f1f1, #99a9de); */
  
-    background-image: url('img/bacground/Mobile-product-BG-2x');
+    background-image: linear-gradient(90deg, rgb(237, 232, 246) 0%, rgb(244, 250, 253) 49.99%, rgb(220, 238, 248) 100%);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -131,13 +143,12 @@ span {
     font-weight: 600;
 }
 .introBlock_elm1{
-   
     font-size: 33px;
     /* font-weight: 500; */
-    padding-top: 10px;
+    padding-top: 11px;
     padding-bottom: 0px;
     line-height: 40px;
-    letter-spacing: -1.6px;
+    letter-spacing: -2px;
 }
 .introBlock_elm1 span{
     font-family: 'semi_bold';
@@ -145,7 +156,7 @@ span {
 .introBlock_elm2{
     line-height: 24px;
     padding-right: 16px;
-    margin-top: 18px;
+    margin-top: 17px;
     font-size: 18px;
     letter-spacing: -0.54px;
     line-height: 28px;
@@ -169,11 +180,13 @@ span {
     font-size: 14px;
     display: flex;
     justify-content: space-between;
-    color: rgb(14, 23, 38);
-    font-weight: 400;
+    color: rgb(0, 66, 117);
+    font-weight: 600;
     padding: 18px;
     padding-left: 15px;
-    border-bottom: 4px solid rgb(14, 23, 38);
+    border-bottom: 4px solid rgb(0, 66, 117);
+    font-family: 'semi_bold';
+    letter-spacing: -0.48px;
 }
 .introBlock_elm-foot-arow img{
      width: 15px;
@@ -191,6 +204,8 @@ span {
     gap: 8px;
     padding-right: 20px;
     padding-left: 20px;
+    padding-top: 32px;
+    padding-bottom: 56px;
 }
 .FeaturedBlock_elm1{
     
@@ -198,11 +213,16 @@ span {
     border-radius: 16px;
 
 }
+.FeaturedBlock_header{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
 .FeaturedBlock_head1{
    padding-left: 20px;
 }
 .FeaturedBlock_Head{
-padding: 20px;
+padding: 0px 17px;
 }
 .FeaturedBlock_Head span{
     font-size: 24px;
@@ -214,6 +234,11 @@ padding: 20px;
 }
 .FeaturedBlock_head1 span{
     font-size: 12px;
+    letter-spacing: 0.96px;
+    line-height: 16px;
+    font-weight: 600;
+    font-family: 'semi_bold';
+    margin-left: -3px;
 }
 .FeaturedBlock_elm1-image{
     padding: 8px 8px 0px;
@@ -227,6 +252,7 @@ padding: 20px;
 }
 .FeaturedBlock_elm1-main{
     padding: 16px;
+    padding-top: 20px;
 }
 .FeaturedBlock_elm1-elm{
     display: flex;
@@ -243,10 +269,17 @@ padding: 20px;
     font-weight: 600;
    
 }
+.FeaturedBlock_elm1{
+    box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.5);
+}
 .FeaturedBlock_elm1-span span{
     font-size: 18px;
     font-family: 'semi_bold';
  
+}
+.FeaturedBlock_elm1-sentance{
+    line-height: 24px;
+    letter-spacing: -0.48px;
 }
 .FeaturedBlock_elm1-forword{
     padding-top: 32px;
@@ -254,37 +287,72 @@ padding: 20px;
     align-items: center;
 }
 .FeaturedBlock_elm1-forword img{
-    padding: 10px;
+    padding: 9px;
     background: #0078d4;
     border-radius: 7px;
-    width: 37px;
+    width: 35px;
 }
 .FeaturedBlock_elm1-forword span{
-    padding-left: 7px;
+    padding-left: 8px;
+    font-size: 14px;
+    letter-spacing: -0.48px;
+    color: rgb(0, 66, 117);
+    font-weight: 600;
+    font-family: 'semi_bold';
 }
+.FeaturedBlock_elm1-forword-i{
+    padding-bottom: 5px;
+}
+/* //////////////////////////////////// */
 .solutionsBlock{
     background-image: url('img/bacground/Mobile-product-BG-2x');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 0px 16px;
-    padding-bottom: 40px;
+    padding: 0px 20px;
+    padding-bottom: 56px;
+    padding-top: 56px;
 } 
+.solutionsBlock-i{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.solutionsBlock-head{
+    font-size: 12px;
+    letter-spacing: 0.96px;
+    font-weight: 600;
+    color: rgb(23, 37, 61);
+    font-family: 'semi_bold';
+}
+.solutionsBlock-head1{
+    font-size: 24px;
+    color: rgb(14, 23, 38);
+    letter-spacing: -1px;
+    line-height: 32px;
+    font-weight: 600;
+    font-family: 'semi_bold';
+}
 .solutionsBlock_elm{
     display: flex;
     overflow-x: auto;
     white-space: nowrap;
+    margin-top: 36px;
+}
+.solutionsBlock_elm::-webkit-scrollbar{
+    display: none;
 }
 .solutionsBlock_elm1 button{
-    background: #0078d4;
+    background: rgb(0, 85, 151);
     color: white;
     border: none;
     font-size: 16px;
     height: 40px;
-    border-radius: 20px;
+    border-radius: 200px;
     max-width: 100%;
-    margin: 20px;
+    margin: 0px;
     font-weight: 600;
+    margin-left: 8px;
     
 
     
@@ -293,21 +361,25 @@ padding: 20px;
     padding: 10px;
 }
 .solutionsBlock_elm2 button{
-    background: #91bbdb;
-    color: rgb(28, 41, 225);
+    background: rgba(0, 85, 151, 0.1);
+    color: rgb(0, 66, 117)    ;
     border: none;
     font-size: 16px;
     height: 40px;
     border-radius: 20px;
     max-width: 100%;
-    margin: 20px;
+    margin: 0px;
     font-weight: 600;
+    margin-left: 7px;
     
 
     
 }
 .solutionsBlock_elm2 button span{
     padding: 10px;
+}
+.solutionsBlock_elm-i{
+    margin-top: 24px;
 }
 .solutionsBlock-head{
     font-size: 12px;
@@ -317,11 +389,53 @@ padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 49px;
+    margin-bottom: 24px;
+}
+.solutionsBlock_elm-ancor a{
+    color: rgb(0, 66, 117);
+    font-family: 'semi_bold';
+    font-size: 14px;
+}
+.solutionsBlock_elm-head span{
+    font-size: 18px;
+    font-family: 'semi_bold';
+    color: rgb(14, 23, 38);
+    font-weight: 600;
+    letter-spacing: -0.54px;
+    line-height: 24px;
+
 }
 .solutionsBlock_elm-head img{
     width: 16px;
     height: 16px;
+}
+.playButton{
+    
+    
+    
+}
+.playButton::before {
+    font-family:'mdl2';
+    position: absolute;
+    font-weight: 600;
+    line-height: 1;
+    content: "";
+    font-size: 14px;
+    text-align: center;
+    left: 43%;
+    top: 41%;
+    color: white;
+    background: rgb(0, 120, 212);
+    font-size: 16px;
+    padding: 14px;
+    border-radius: 8px;
+   
+}
+.solutionsBlock_elm-image{
+    position: relative;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
 }
 .solutionsBlock_elm-image img{
     object-fit: cover;
@@ -334,8 +448,13 @@ padding: 20px;
     justify-content: space-between;
     align-items: center;
     padding: 24px 0px;
-    border-bottom: 1px solid grey;
-    border-top: 1px solid grey;
+    /* border-bottom: 1px solid grey; */
+    border-top: 1px solid rgb(172, 168, 168);
+    font-size: 18;
+    font-weight: 600;
+    letter-spacing: -0.3px;
+    font-family: 'semi_bold';
+    color: rgb(14, 23, 38);
 
 }
 .solutionsBlock_elm-button1 img{
@@ -345,10 +464,16 @@ padding: 20px;
     display: flex;
     flex-direction: column;
     row-gap: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 24px;
 }
 .solutionsBlock_elm-ancor{
-    padding-bottom: 20px;
+    padding-bottom: 24px;
+}
+.solutionsBlock_elm-button .FeaturedBlock_elm1-forword{
+    padding-top: 24px;
+}
+.solutionsBlock_elm-button :nth-child(4) {
+    border-bottom: 1px solid rgb(172, 168, 168);
 }
 /* //////////// */
 .productBlock{
@@ -356,18 +481,30 @@ padding: 20px;
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center;
-    padding-right: 1rem;
-    padding-left: 1rem;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 56px;
+    padding-bottom: 56px;
 }
 .productBlock-head{
     font-size: 12px;
-    padding-bottom: 20px;
+    padding-bottom: 12px;
+    color:rgb(23, 37, 61) ;
+    letter-spacing: 0.96px;
+    font-family: 'semi_bold';
+    font-weight: 600;
+
 }
 .productBlock-Head1{
     font-size: 24px;
-    padding-bottom: 10px;
+    font-family: 'semi_bold';
+    letter-spacing: -0.86px;
+    font-weight: 600;
+}
+.productBlock_elm-i{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
 .productBlock_elm{
     background-image: url('img/351994-Desktop-CardGrid-ProductandServices-PromoCard-320x592.avif');
@@ -375,24 +512,37 @@ padding: 20px;
     background-size: cover;
     background-position:center;
     object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
     border-radius: 15px;
-    
+    margin-top: 32px;
 
     /* height: 100%; */
 
 
 }
+.productBlock .solutionsBlock_elm{
+    margin-top: 32px;
+}
 .productBlock_elm1{
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    align-items: center;
-    height: 70%;
+    height: 412px;
+    max-width: 100%;
     padding: 20px;
     color: white;
+    gap: 12px;
 }
 .productBlock_elm-head{
     font-size: 24px;
+    font-family: 'semi_bold';
+    font-weight: 600;
+    letter-spacing: -0.8px;
+   
+}
+.productBlock_elm-head span{
+    
 }
 .productBlock_elm-button{
     font-size: 15px;
@@ -408,23 +558,57 @@ padding: 20px;
     border-radius: 8px;
     font-size: 15px;
 }
+.productBlock_elm-sent{
+    font-size: 16px;
+    letter-spacing: -0.48px;
+}
 .productBlock_elm2{
-    padding-top: 20px;
+    padding-top: 0px;
 }
 .productBlock_elm-box{
     display: flex;
     flex-direction: column;
     background: white;
     border-radius: 15px;
-    row-gap: 20px;
-    padding: 20px;
+    row-gap: 13px;
+    padding: 16px;
+    box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.5);
 }
-.productBlock_elm-box-image img{
-    box-shadow:1px 2px 5px 0px rgba(0, 0, 0, 0.5);
-    border-radius: 5px;
-    padding: 10px;
+.productBlock_elm-box-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 48px;
     height: 48px;
+    background: white;
+    box-shadow:0px 0px 1px 0px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+}
+.productBlock_elm-box-head{
+    font-family: 'semi_bold';
+    font-weight: 600;
+    letter-spacing: -0.27px;
+}
+.productBlock_elm-box-image img{
+    
+    border-radius: 5px;
+    /* padding: 10px; */
+    width: 24px;
+    height: 24px;
+}
+.productBlock_elm-box-sent{
+    letter-spacing: -0.48px;
+    line-height: 24px;
+}
+.productBlock_elm-box-anchor{
+    padding-top: 3px;
+}
+.productBlock_elm-box-anchor a{
+    color:rgb(0, 66, 117) ;
+    font-family: 'semi_bold';
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: -0.48px;
 }
 .gatnerBlock{
     background-image: url('img/bacground/gater.avif');
