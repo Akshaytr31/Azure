@@ -622,9 +622,9 @@ padding: 0px 17px;
 }
 .gatnerBlock_elm{
     background: white;
-    padding: 10px;
+    /* padding: 10px; */
     border-radius: 10px;
-    box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.5);
+    box-shadow:0px 0px 7px 0px rgb(119 116 116 / 50%);
 }
 .gatnerBlock_elm-image img{
     object-fit:cover;
@@ -632,30 +632,46 @@ padding: 0px 17px;
     max-height: 100%;
     border-radius: 10px;
 }
+.gatnerBlock_elm1{
+    padding: 8px 9px 0px;
+}
 .gatnerBlock_elm2{
     display: flex;
     flex-direction: column;
     justify-content:space-between;
-    row-gap: 30px;
+    row-gap: 32px;
     padding-top: 40px;
     align-items: center;
+    padding: 13px;
 }
 .gatnerBlock_elm2-text{
     display: flex;
     flex-direction: column;
     row-gap: 10px;
+    padding-top: 44px;
+    /* padding: 16px; */
 }
 .gatnerBlock_elm2-text-head{
     font-size: 24px;
     font-weight:600;
+    font-family: 'semi_bold';
+    line-height: 32px;
+    letter-spacing: -0.89px;
+    color: rgb(14, 23, 38);
 }
 .gatnerBlock_elm2-text-sent{
     font-size: 18px;
     line-height: 30px;
+    letter-spacing: -0.54px;
+    line-height: 28px;
+    color: rgb(23, 37, 61);
 }
 .gatnerBlock_elm2-button{
     font-size: 15px;
     width: 100%;
+    font-weight: 600;
+    font-family: 'semi_bold';
+    letter-spacing: -0.3px;
    
 }
 .gatnerBlock_elm2-button button{
@@ -665,6 +681,10 @@ padding: 0px 17px;
     height: 52px;
     border: none;
     border-radius: 10px;
+    font-weight: 600;
+    font-family: 'semi_bold';
+    letter-spacing: -0.3px;
+    font-size: 15px;
     
 
 }
@@ -694,6 +714,10 @@ padding: 0px 17px;
 .roleBlock_elm-head{
     font-size: 12px;
     margin-bottom: 12px;
+    font-weight: 600;
+    letter-spacing: 0.96px;
+    color: rgb(23, 37, 61)
+    ;
 }
 .roleBlock_elm-head1{
     font-size: 28px;
