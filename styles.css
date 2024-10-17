@@ -2036,6 +2036,31 @@ padding: 0px 16px;
     .FeaturedBlock_elm1-sentance{
         padding-right: 24px;
     }
+    .grediArrow button::after{
+        font-family: 'mdl2';
+        font-size: 18px;
+        content:"" ;
+        color: rgb(0, 66, 117);
+        font-weight: 600;
+    }
+    .grediArrow button{
+        border: none;
+        background: white;
+       
+
+    }
+    .grediArrow{
+        height: 36px;
+        width:36px;
+        border: 2px solid rgb(0, 66, 117); ;
+        border-radius: 200px;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        right: 27%;
+        background: white;
+    }
     .productBlock_elm2-i{
         display: grid;
         gap: 15px;
@@ -2070,24 +2095,68 @@ padding: 0px 16px;
     .solutionsBlock_elm-i{
         display: flex;
         flex-direction: column;
-        height: 40.5%;
-        overflow: auto;
+        position: relative;
+        
+       
+        
+    } 
+    .solution-basis{
         flex-basis: 50%;
         flex-grow: 0;
         flex-shrink: 0;
-        width: 31.5%;
+        display: flex;
+        flex-direction: column;
     }
+    .solutionsBlock_elm-flx{
+        flex-basis:50%;
+        width: 40%;
+        max-height: 492px;
+        height: 100vh;
+        overflow: auto;
+    }
+      
+
+        
+        
+    
+    .w{
+        position: relative;
+    }
+    .go{
+        flex-basis:50%;
+        width: 40%;
+        max-height: 492px;
+        height: 100vh;
+        overflow: auto;
+        list-style: none;
+    }
+    .solutionsBlock_elm-flx{
+        /* max-height: 492px;
+        height: 100vh;
+        overflow: auto;
+        flex-basis: 50%;
+        flex-grow: 0;
+        flex-shrink: 0; */
+    }
+
     .solutionsBlock_elm-button {
         flex-direction: row;
         padding-left: 50px;
     }
     .solutionsBlock_elm-image{
         position: absolute;
-        right: 67px;
+        /* right: 67px;
         flex-basis: 50%;
         flex-grow: 0;
         flex-shrink: 0;
-        width: 46%;
+        width: 40% */
+        width: 50%;
+        max-width: 656px;
+        max-height:528px;
+        aspect-ratio:4/3;
+        right: 0;
+        top: 0;
+        
     
     }
     .solutionsBlock_elm-head {
@@ -2405,21 +2474,58 @@ padding: 0px 16px;
 }
 @media  screen and (min-width:1120px) {
     .o{
-        width: 66.6%;
+        width: 80.6%;
         margin-inline: auto;
     }
     .introBlock-i{
-        width: 66.6%;
+        width: 80.6%;
         margin-inline:auto;
     }
-    .introBlock_elm-foot-i{
-        width: 1008px;
+    /* .introBlock_elm-foot-i{
+        width: 80.6%;
+        margin-inline:auto;
+    } */
+    .featured{
+        width: 80.6%;
+        margin-inline: auto;
+    }
+    .solutions{
+        width: 80.6%;
         margin-inline:auto;
     }
+    .productBlock-i{
+        width:80.6%;
+        margin-inline:auto;
+    }
+    .gatnerBlock-i{
+        width:80.6%;
+        margin-inline:auto;
+    }
+    .roleBlock-i{
+        width: 80.6%;
+        margin-inline:auto;
+    }
+    .storieBlock-i{
+        width: 80.6%;
+        margin-inline:auto;
+   }
+    .stepBlock-i{
+        width: 80.6%;
+        margin-inline:auto;
+    }
+    #social{
+        width: 80.6%;
+        margin-inline: auto;
+    }
+    .footerBlock-i{
+        width: 90%;
+        margin-inline:auto;
+    }
+/*     
     .introBlock{
         padding-inline: auto;
     }
-  
+   */
     .storieBlock-imgList-img{
         height: 122.2px;
         width: 200px;
