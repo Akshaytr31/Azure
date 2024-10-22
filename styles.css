@@ -1723,6 +1723,9 @@ padding: 0px 16px;
 #fixed{
     display:none;
 }
+.cover-i{
+    display: flex;
+}
 @media screen and (min-width:540px){
     .introBlock{
         padding-inline: 64px;
@@ -1959,6 +1962,9 @@ padding: 0px 16px;
         margin-top: -3px;
     }
     /* //////////////////////////////// */
+    .cover-i{
+        flex-direction: column;
+    }
     .coverimg{
         flex-basis: 100%;
         max-width: 100%;
@@ -1980,7 +1986,7 @@ padding: 0px 16px;
 
     /* ///////////////////////////////////// */
     .introBlock{
-        position: relative;
+        /* position: relative; */
         background: rgb(0, 41, 72);
         padding-right: 56px;
         padding-left: 56px;
@@ -2001,9 +2007,7 @@ padding: 0px 16px;
     .introBlock_elmb{
         margin-top: 32px;
     }
-    .cover{
-        position: relative;
-    }
+ 
     .o{
         display: flex;
         position: absolute;
@@ -2606,10 +2610,11 @@ padding: 0px 16px;
     /* //////////////////////////// */
     .gatnerBlock_elm2{
         gap: 6rem;
-        padding: 24px 56px 24px 24px;
+        padding: 31px 56px 24px 16px;
     }
     .gatnerBlock_elm2-text{
         padding: 0px;
+        gap: 17px;
     }
     .roleBlock_elm1-button button{
         padding:16px 24px 12px ;
@@ -2623,6 +2628,10 @@ padding: 0px 16px;
     .roleBlock_elm1-i:last-child{
         border-top-right-radius: 8px;
         border-bottom-right-radius:8px;
+    }
+    .roleBlock_elm-image-i{
+        width: 66.66%;
+        margin-inline:auto;
     }
     /* ?????????????????????????? */
     .stepBlock{
@@ -2638,7 +2647,7 @@ padding: 0px 16px;
     }
     #fixed{
         display: flex;
-        height: 70px;
+        height: 71px;
     }
     .finalblock_elm3 li{
         padding:0px 24px 4px 0px;
@@ -2715,9 +2724,14 @@ padding: 0px 16px;
         display:none;
     }
     .storieBlock-imgList{
-        margin-top:32px;
+        margin-top:44px;
     }
-
+    .storieBlock .gatnerBlock_elm2-button{
+        padding-top: 32px;
+    }
+    .gatnerBlock .gatnerBlock_elm2-button{
+        padding-top: 0;
+    }
 .storieBlock-imgList-i{
     box-shadow:0px 0px 2px 0px rgba(0, 0, 0, 0.5);
     border-radius: 20px;
@@ -2768,6 +2782,7 @@ padding: 0px 16px;
         padding-top: 5px;
         /* width: 182.05px; */
         flex-basis: unset;
+        width: 182.05px;
     }
     .introBlock_elm-foot-i{
         align-items:center;
@@ -2878,7 +2893,7 @@ padding: 0px 16px;
         padding-left:0px;
     }
     .finalBlock{
-        padding-top:31px;
+        padding-top:32px;
         padding-inline:0px;
     }
     .final-flex{
@@ -2912,6 +2927,9 @@ padding: 0px 16px;
     }
     .footer-grid{
         grid-template-columns:repeat(6,1fr);
+    }
+    .footerBlock-i{
+        padding-right: 0px;
     }
     .dt_elm1-ul-li-div-pro{
         display:none;
@@ -2961,6 +2979,7 @@ padding: 0px 16px;
     }
     .FeaturedBlock_elm{
         padding-inline: 0px;
+        padding-right:0.5rem;
     }
     .FeaturedBlock_head1{
         padding-left: 0px;
@@ -2973,9 +2992,13 @@ padding: 0px 16px;
     }
     .productBlock{
         padding-inline: 0px;
+        padding-right:0.5rem;
     }
     .gatnerBlock{
         padding-inline: 0px;
+    }
+    .gatnerBlock-ip{
+        padding-right: 0.5rem;
     }
     .roleBlock{
         padding-inline: 0px;
@@ -3002,6 +3025,9 @@ padding: 0px 16px;
         margin-inline:auto;
         max-width: 100vw;
     }
+    .introBlock_elm2{
+        padding-right:55px;
+    }
     .featured{
         width: 90%;
         margin-inline: auto;
@@ -3023,6 +3049,9 @@ padding: 0px 16px;
         margin-inline:auto;
         max-width: 100vw;
     }
+    .gatnerBlock_elm1{
+        padding-left: 0;
+    }
     .roleBlock-i{
         width: 90%;
         margin-inline:auto;
@@ -3039,7 +3068,7 @@ padding: 0px 16px;
         max-width: 100vw;
     }
     .stepBlock_elm1{
-        padding:0px;
+        padding:0 1rem 0 0;
     }
     #social{
         width: 90%;
@@ -3064,7 +3093,7 @@ padding: 0px 16px;
         padding-top: 0px;
     }
     .finalBlock_elm3{
-        margin: 2px 0px 2px 0px;
+        margin: 1px 0px 2px 0px;
     }
 /*     
     .introBlock{
@@ -3163,6 +3192,10 @@ padding: 0px 16px;
      
         
     }
+    .fixedBlock_elm2 span{
+        font-size: 20px;
+        letter-spacing:-0.6px;
+    }
     .productBlock {
         background-image: url(img/bacground/product\(1440\).avif);
         background-repeat: no-repeat;
@@ -3171,25 +3204,45 @@ padding: 0px 16px;
     }
    
     .solutions{
-        margin-inline:auto;
+        margin-inline:0;
         max-width: 1328px;
     } 
     .productBlock-i{
         max-width: 1328px;
     }  
     .gatnerBlock-i{
-        max-width: 1328px;
+        padding-inline: 5%;
+        width: 1465px;
     }
+    .gatnerBlock_elm{
+      
+    }
+ 
     .roleBlock-i{
         max-width:1328px;
+        padding-inline: 5%;
 
     }
     .storieBlock-i{
-        max-width: 1328px;
+        padding-inline: 5%;
+        width: 1328px;
+        box-sizing: content-box;
+        
+    }
+    .storieBlock_elm-flex{
+        padding-right:0.5rem;
+        gap:22px;
     }
     .stepBlock-i{
-        max-width:1328px;
-
+        width:1328px;
+        padding-inline:5%;
+        box-sizing: content-box;
+    }
+    .stepBlock_elm1{
+        width: 1328px;
+        padding-right: 1rem;
+        /* padding-left: 0.5rem; */
+        
     }
     #social{
         max-width:1328px;
