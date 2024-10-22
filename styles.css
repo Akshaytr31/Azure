@@ -136,7 +136,7 @@ span {
 }
 .introBlock{
     padding-top: 32px;
-    padding-bottom: 96px;
+    padding-bottom: 56px;
     padding-right: 1rem;
     padding-left: 1rem;
 
@@ -182,6 +182,10 @@ span {
     flex-basis: 100%;
     flex-grow: 0;
     flex-shrink: 0; */
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items:flex-end;
 }
 .introBlock_elmb{
     height: 52px;
@@ -207,7 +211,27 @@ span {
     display: flex;
     justify-content:center;
     align-items: center;
+    text-wrap: nowrap;
 
+}
+.introBlock_elmbH{
+    height:52px;
+    border-radius:10px;
+    width:100%;
+}
+.introBlock_elmbH span{
+    font-weight: 600;
+    font-size:15px;
+    letter-spacing:-0.3px;
+    font-family:'semi_bold';
+    padding: 12px;
+    height: 52px;
+    border-radius: 10px;
+    border:2px solid rgb(179, 218, 240) ;
+    color: rgb(179,218,240);
+    display: flex;
+    align-items: center;
+    justify-content:center;
 }
 .regionBlock_elmb{
     height: 52px;
@@ -267,8 +291,12 @@ span {
     
 
 }
+.fn{
+    box-shadow:0px 2px 3px 0px rgb(137 135 135 / 50%);
+    width: 100%;
+}
 .FeaturedBlock{
-    background-image: url('img/bacground/Mobile-feature-BG-2x-1');
+    background-image: url('img/bacground/featured.avif');
     padding-top: 56px;
     background-size: cover;
     background-position: center;
@@ -1080,30 +1108,32 @@ padding: 0px 16px;
     background:white;
     border: none;
     height: 52px;
-    padding: 12px 16px 16px;
+    padding: 12px 16px 8px;
     font-size: 16px;
     width: 188px;
     text-align: start;
     box-shadow:1px 2px 5px 0px rgba(0, 0, 0, 0.5) ;
     display: flex;
-    justify-content: center;
-    align-items: flex-end;
+    /* justify-content: center; */
+    align-items: center;
+    width: 220.33px;
 
 }
 .roleBlock_elm1-button-i button{
     background: white;
     border: none;
     height:52px;
-    padding: 12px 16px 16px;
+    padding: 12px 16px 8px;
     font-size: 16px;
     width:188px;
     display: flex;
-    justify-content: center;
-    align-items: flex-end;
+    /* justify-content: center; */
+    align-items: center;
     box-shadow:1px 2px 5px 0px rgba(0, 0, 0, 0.5) ;
     border-top-left-radius:8px;
     border-bottom-left-radius: 8px;
     border-bottom: 4px solid rgb(0, 66, 117);
+    width: 220.33px;
     
 
 
@@ -1547,7 +1577,7 @@ padding: 0px 16px;
     letter-spacing: -0.3px;
     font-weight: 600;
     font-family: 'semi_bold';
-
+    text-wrap:nowrap;
    
 }
 .blank{
@@ -1613,7 +1643,7 @@ padding: 0px 16px;
     display: flex;
     gap: 0px;
     align-items: flex-start;
-    margin: 7px 0px 17px;
+    margin: 10px 0px 20px;
     padding: 4px 24px 0px 0px;
 }
 .finalBlock_elm-word{
@@ -1686,8 +1716,16 @@ padding: 0px 16px;
     .introBlock{
         padding-inline: 64px;
     }
+    .introBlock_elmb-i{
+        flex-direction:row;
+    }
     .introBlock_elmb  {
         display: flex;
+        width: unset;
+    }
+    .introBlock_elmbH{
+        display: flex;
+        margin-top: 24px;
     }
     .regionBlock_elmb{
         display: flex;
@@ -1773,6 +1811,11 @@ padding: 0px 16px;
     }
 
 
+}
+@media screen and (min-width:830px){
+    .grediArrowL{
+        display:none;
+    }
 }
 @media screen and (min-width:860px){
 
@@ -1965,7 +2008,15 @@ padding: 0px 16px;
     }
     .introBlock_elm2{
         margin-top: 24px;
-        padding-right: 69px;
+        padding-right: 53px;
+    }
+    .introBlock_elmb span{
+        padding: 12px 18px 15px;
+        border-radius: 8px;
+    }
+    .introBlock_elmbH span {
+        padding: 12px 16px 15px;
+        border-radius:8px;
     }
     .introBlock-none{
         display: inline;
@@ -1979,20 +2030,20 @@ padding: 0px 16px;
     .introBlock-none-elm{
         display: flex;
         flex-direction: column;
-        gap:5px;
+        gap: 7px;
         flex-basis: 50%;
         width: 50%;
         flex-grow: 0;
         flex-shrink: 0;
         justify-content: center;
-        padding: 14px 12px 12px 0px;
+        padding: 16px 12px 12px 0px;
 
 
     }
     .introBlock-none-sent{
         display: flex;
         flex-direction: column;
-        gap: 5px;       
+        gap: 4px;       
         color: white;
     }
     .introBlock-none-image img{
@@ -2058,12 +2109,14 @@ padding: 0px 16px;
     .introBlock-none-elm1-ul-li button{
         padding: 8px 10px;
         background: rgb(0, 41, 72);
-        border-radius: 10px;
+        border-radius: 8px;
         color: white;
         border: 1px solid rgb(141, 200, 232);
         font-family: normal;
         font-size: 14px;
         letter-spacing: -0.28px;
+        padding-bottom:9px;
+     
     }
     .introBlock-none-h2 h2{
         font-family: 'semi_bold';
@@ -2076,7 +2129,7 @@ padding: 0px 16px;
         font-family: 'normal';
         font-size: 14px;
         letter-spacing: -0.42px;
-        line-height: 16px;
+        line-height: 20px;
     }
 
 
@@ -2087,6 +2140,7 @@ padding: 0px 16px;
     .j{
         display: flex;
         overflow: auto;
+        margin-right: 96px;
     }
     .j::-webkit-scrollbar{
         display: none;
@@ -2098,10 +2152,10 @@ padding: 0px 16px;
         flex-shrink: 0;
         overflow: auto;
         width: 50%; */
-        padding-left: 10px;
+        padding-left: 4px;
         padding-top: 5px;
         padding-bottom: 1px;
-        gap: 20px;
+        gap: 21px;
         border-bottom: none;
     }
     .introBlock_elm-foot-i{
@@ -2110,7 +2164,7 @@ padding: 0px 16px;
         flex-grow: 0;
         flex-shrink: 0; */
         overflow: auto;
-        padding-inline: 54px;
+        padding-inline: 56px;
         justify-content:space-between;
     }
     .introBlock_elm-foot-button{
@@ -2141,10 +2195,23 @@ padding: 0px 16px;
         justify-content: flex-start;
         text-wrap: nowrap;
     }
+    .FeaturedBlock{
+        padding-top:96px;
+        padding-bottom:96px;
+    }
+    .FeaturedBlock_header{
+        padding-inline: 56px;
+    }
+    .featuredBlock_Head{
+        padding:0px;
+    }
+    .FeaturedBlock_head1{
+        padding: 0px;
+    }
     .FeaturedFlex{
         display: flex;
         justify-content: center;
-        gap: 36px;
+        gap: 44px;
         padding-bottom: 18px;
     }
     .featuredFlex-i{
@@ -2165,7 +2232,7 @@ padding: 0px 16px;
 
     .introBlock_elm-foot-text-i{
         /* margin-right: 23px; */
-        margin-top: 16px;
+        margin-top: 14px;
         padding: 0px 0px 4px 4px;
         display: flex;
         justify-content: flex-start;
@@ -2175,6 +2242,7 @@ padding: 0px 16px;
         color: rgb(0,66,117);
         font-weight: 600;
         text-wrap: wrap;
+        font-size: 14px;
     
 
 
@@ -2183,9 +2251,9 @@ padding: 0px 16px;
         border-bottom: 4px solid;
         padding-bottom: 16px;
         font-family: 'semi_bold';
-        font-size: 15px;
+        font-size: 14px;
     }
-    .introBlock_elm-foot-text-i span{
+    .introBlock_elm-foot-text-i a{
         width: 100%;
         text-wrap: nowrap;
         font-size:14px;
@@ -2195,7 +2263,7 @@ padding: 0px 16px;
         border-radius:16px
     }
     .featuredBlock_elm1-forword{
-        padding-top:48px;
+        padding-top:52px;
         padding-bottom:0px;
     }
     .FeaturedBlock_elm{
@@ -2203,12 +2271,16 @@ padding: 0px 16px;
         grid-template-columns: repeat(3,1fr);
         gap: 15px;
         padding-left: 56px;
+        padding-top:48px;
+        padding-bottom: 0px;
     }
     .FeaturedBlock_elm1-elm{
         gap: 16px;
     }
     .FeaturedBlock_elm1-main{
         padding: 24px;
+        padding-top: 28px;
+        padding-bottom:28px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -2220,9 +2292,9 @@ padding: 0px 16px;
     .gridiOuterbox{
         background: rgb(255 255 255 / 100%);
         position:absolute;
-        height: 35px;
+        height: 39px;
         width: 80px;
-        right:22.86%;
+        right:22.99%;
         box-shadow:-20px 0px 4px 3px rgb(255 255 255 / 87%);
         border-radius: 200px;
         display:flex;
@@ -2282,7 +2354,8 @@ padding: 0px 16px;
         flex-direction: column;
     }
     .solutionsBlock{
-        padding-top: 76px;
+        padding-top: 96px;
+        padding-bottom:96px;
         padding-inline: 56px;
     }
     .solutionsBlock-i{
@@ -2350,7 +2423,7 @@ padding: 0px 16px;
         max-width: 656px;
         max-height:528px;
         aspect-ratio:4/3;
-        right: 0;
+        right: 5px;
         top: 0;
         
     
@@ -2375,7 +2448,10 @@ padding: 0px 16px;
     }
     .go{
         /* border-left:3px solid rgb(0, 85, 151); */
-        padding-left: 47px;
+        /* padding-left: 47px; */
+    }
+    .solutionButton{
+        padding-left:47px;
     }
     .reagionBlok_elm{
         padding-bottom: 128px;
@@ -2404,17 +2480,46 @@ padding: 0px 16px;
     .solutionsBlock_elm-button1{
         padding: 32px 0px;
     }
+    .solutionsBlock_elm-headB{
+        border-left: 3px solid rgb(0, 66, 117);
+        padding-left: 47px;
+    }
+    .arrowDown{
+        margin-top: 23px;
+    }
     /* s
     torieBlock */
+    .productBlock{
+        padding-top: 96px;
+        padding-bottom: 96px;
+    }
+    .gatnerBlock{
+        padding-top: 96px;
+        padding-bottom: 96px;
+    }
+    .roleBlock_elm{
+        padding-top: 72px;
+    }
+    .roleBlock_elm2{
+        padding-bottom: 72px;
+    }
     #storieBlock_elm-flex-container{
         display: flex;
         flex-direction: row-reverse;
+    }
+    .storieBlock{
+        padding-top:72px;
+        padding-bottom:72px;
+    }
+    .storieBlock_content{
+        padding:24px 74px 24px 24px;
     }
     .storieBlock_image{
         flex-basis: 50%;
         max-width: 50%;
         flex-grow: 0;
         flex-shrink: 0;
+        padding-left:0px;
     }
     .storieBlock_image img {
         height: 100%;
@@ -2440,6 +2545,7 @@ padding: 0px 16px;
     }
     .storieBlock-imgList-img{
         background: white;
+        max-width:calc(1328px/6)
        
     }
     /* //////////////////? */
@@ -2458,10 +2564,30 @@ padding: 0px 16px;
     .gatnerBlock_elm2-text{
         padding: 0px;
     }
+    .roleBlock_elm1-button button{
+        padding:16px 24px 12px ;
+        height: 64px;
+
+    }
+    .roleBlock_elm1-button-i button{
+        padding:16px 24px 12px;
+        height:64px;
+    }
+    .roleBlock_elm1-i:last-child{
+        border-top-right-radius: 8px;
+        border-bottom-right-radius:8px;
+    }
     /* ?????????????????????????? */
+    .stepBlock{
+        padding-top: 96px;
+        padding-bottom: 96px;
+    }
     .stepBlock_elm1{
         display: grid;
         grid-template-columns: repeat(3,1fr);
+    }
+    .socialBlock{
+        padding: 24px 64px;
     }
     #fixed{
         display: flex;
@@ -2529,6 +2655,11 @@ padding: 0px 16px;
     }
     .finalblock_elm3{
         justify-content:flex-end;
+        margin-top:4px;
+    }
+    .finalblock_elm1{
+        margin:10px 0px 20px;
+
     }
     .bigScreen{
         display: none;
@@ -2545,16 +2676,34 @@ padding: 0px 16px;
     border-radius: 20px;
 }
 .storieBlock-imgList-img:first-child{
-    border-top-left-radius: 20px;
-    border-bottom-left-radius:20px
+    border-top-left-radius: 16px;
+    border-bottom-left-radius:16px;
+    border-bottom:4px solid #004275;
 }
 .storieBlock-imgList-img:nth-child(5){
-    border-top-right-radius:20px;
-    border-bottom-right-radius:20px;
+    border-top-right-radius:16px;
+    border-bottom-right-radius:16px;
     border-right:none;
 }
 .storieBlock-imgList-img{
     border-right: 1px solid grey;
+}
+.stepBlock_elm1-child{
+    padding: 24px;
+    padding-bottom:30px;
+    border-radius: 22px;
+}
+.stepBlock_elm1{
+    gap:16px;
+    padding-left:16px;
+    margin-top:32px;
+}
+.stepBlock_elm1-child-box{
+    padding-right:24px;
+    gap:16px;
+}
+.stepBlock_elm h2{
+    font-size:30px;
 }
 .leftRight-button{
     display: none;
@@ -2570,6 +2719,8 @@ padding: 0px 16px;
     .introBlock_elm-foot-button{
         height:44px;
         padding-top: 5px;
+        /* width: 182.05px; */
+        flex-basis: unset;
     }
     .introBlock_elm-foot-i{
         align-items:center;
@@ -2582,6 +2733,9 @@ padding: 0px 16px;
     }
 }
 @media screen and (min-width:1084px){
+    .dt_header-im{
+        padding-inline:5%;
+    }
     .dt_header-i {
         display: flex;
         align-items: center;
@@ -2654,10 +2808,49 @@ padding: 0px 16px;
         border-radius: 3px;
         height:31px;
     }
+    .o{
+        top:-512px;
+    }
+    .introBlock-none-elm1{
+        padding-top:5px;
+    }
+    .introBlock_elm-foot-i{
+        height: 56px;
+    }
+    .FeaturedBlock_header{
+        gap:8px;
+    }
+    .footerBlock{
+        padding-inline: 5%;
+        max-width:calc(1600px + 10%)
+    }
+    .footerBlock_elm:first-child{
+        padding-left:0px;
+    }
+    .footerBlock_elm:nth-child(4){
+        padding-left:0px;
+    }
+    .finalBlock{
+        padding-top:31px;
+        padding-inline:0px;
+    }
     .final-flex{
         display:flex;
         align-items:center;
     }
+    .finalBlock_elm1{
+        margin:0px;
+        padding-top:0px
+    }
+    .finalBlock_elm{
+        padding-right:24px;
+    }
+    .finalBlock_elm3{
+        margin:1px 0px 4px 0px;
+    }
+    /* .finalBlock_elm3 li:last-child{
+        padding-right:0px;
+    } */
     .footer-grid{
         grid-template-columns:repeat(6,1fr);
     }
@@ -2785,14 +2978,33 @@ padding: 0px 16px;
         margin-inline:auto;
         max-width: 100vw;
     }
+    .stepBlock_elm1{
+        padding:0px;
+    }
     #social{
         width: 90%;
         margin-inline: auto;
         max-width: 100vw;
     }
+    .socialBlock{
+        padding-inline: 4px;
+        gap: 12px;
+    }
+    .socialBlock_elm1{
+        margin-left: 0px;
+    }
+    .socialBlock_elm{
+        padding-inline: 16px;
+        padding-left: 18px;
+        width:235.58px ;
+    }
     .footerBlock-i{
-        width: 90%;
-        margin-inline:auto;
+        /* width: 90%;
+        margin-inline:auto; */
+        padding-top: 0px;
+    }
+    .finalBlock_elm3{
+        margin: 2px 0px 2px 0px;
     }
 /*     
     .introBlock{
@@ -2808,6 +3020,9 @@ padding: 0px 16px;
     .dt_elm1-ul-li-div-sol{
         display:inline;
     }
+    .o{
+        top:-497px;
+    }
 
 }
 @media screen and (min-width:1292px){
@@ -2816,7 +3031,15 @@ padding: 0px 16px;
     }
     
 }
-
+@media screen and (min-width:1397px){
+    .finalBlock{
+        flex-direction:row;
+        justify-content:space-between;
+    }
+    .final-flex{
+        margin-bottom:2px;
+    }
+}
 @media screen and (min-width:1440px){
 
     
@@ -2837,11 +3060,14 @@ padding: 0px 16px;
        }
     .introblock{
         /* padding-inline:6%; */
-        padding-top:34px;
+        padding-top:32px;
         /* margin-inline:0;*/
     }
     .dt_header-im{
-        padding-inline:8%;
+        padding-inline:5%;
+    }
+    .introBlock-none-elm1{
+        padding-top:2px;
     }
     .o{
         max-width: 1328px;
@@ -2855,6 +3081,21 @@ padding: 0px 16px;
     .featured{
         max-width: 1328px;
     }
+    .FeaturedBlock_Head span {
+        font-size:32px;
+        letter-spacing:-1.6px;
+    }
+    .FeaturedBlock_elm1-span span{
+        font-size:20px;
+        letter-spacing: -0.6px;
+        line-height: 28px;
+    }
+    .solutionsBlock-head1 h2{
+        font-size:32px;
+        letter-spacing:-1.6px;
+
+    }
+   
     .solutions{
         margin-inline:auto;
         max-width: 1328px;
@@ -2910,6 +3151,10 @@ padding: 0px 16px;
         padding-top:5px;
         padding-right:8px;
     }
+    .productBlock-Head1  h2{
+        font-size:32px;
+        letter-spacing:-1.6px;
+    }
     .productBlock_elm-i{
         flex-direction:row;
         margin-top: 48px;
@@ -2939,6 +3184,40 @@ padding: 0px 16px;
         /* width: 318px;
         height: 588.2px; */
     }
+    .pro-sent-h3 h3{
+        font-size:32px;
+        letter-spacing:-1.6px;
+    }
+    .card_promo-fg-container{
+        padding: 24px;
+        width: 310px;
+    }
+    .gatnerBlock_elm2-text-head h2{
+        font-size:32px;
+        letter-spacing:-1.6px;
+    }
+    .gatnerBlock_elm2 {
+        padding-right:72px;
+    }
+    .gatnerBlock_elm2-text-sent{
+        font-size:20px;
+    }
+    .roleBlock_elm-head1 h2{
+        font-size:32px;
+        letter-spacing:-1.6px;
+    }
+    .roleBlock_elm2-sent h3{
+        font-size:24px;
+        letter-spacing:-1.2px;
+    }
+    .storieBlock_elm-head1 h2{
+        font-size:32px;
+        letter-spacing:-1.6px;
+    }
+    .stepBlock_elm1-child-box-head h3 {
+        font-size:20px;
+    }
+   
 }
 @media screen and (min-width:1448px){
 }
