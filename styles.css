@@ -93,14 +93,24 @@ span {
     gap: 8px;
     padding: 10px;
     padding-left: 16px;
-    padding-bottom: 9px;
+    padding-bottom: 11px;
     font-size: 15px;
-    height: 33px;
+    height: 34px;
     
 }
+.azureHeading_arow button::before{
+    /* background: white;
+    border: none; */
+    content: "";
+    font-family: "mdl2";
+    background:white;
+    font-weight:700;
+    font-size:12px;
+}
 .azureHeading_arow button{
-    background: white;
     border: none;
+    padding-top:4px;
+    background: white;
 }
 .azureHeading_arow img{
     width: 14px;
@@ -111,7 +121,6 @@ span {
     max-height: 100%;
     object-fit: cover;
     /* aspect-ratio: 7/4; */
-    padding-top: 1px;
 }
 .coverimg{
     max-width: 100%;
@@ -186,7 +195,7 @@ span {
     font-size: 18px;
     letter-spacing: -0.54px;
     line-height: 28px;
-    color: rgb(179, 218, 240);
+    color: white;
 }
 .introBlock_elmb-i{
     /* display: flex;
@@ -215,7 +224,7 @@ span {
     padding: 12px;
     width: 100%;
     height: 52px;
-    border-radius: 10px;
+    border-radius: 8px;
     border: none;
     background: rgb(179, 218, 240);
     color:black;
@@ -223,6 +232,7 @@ span {
     justify-content:center;
     align-items: center;
     text-wrap: nowrap;
+    padding-bottom:14px;
 
 }
 .introBlock_elmbH{
@@ -237,12 +247,13 @@ span {
     font-family:'semi_bold';
     padding: 12px;
     height: 52px;
-    border-radius: 10px;
+    border-radius: 8px;
     border:2px solid rgb(179, 218, 240) ;
-    color: rgb(179,218,240);
+    color: white;
     display: flex;
     align-items: center;
     justify-content:center;
+    padding-bottom:14px;
 }
 .regionBlock_elmb{
     height: 52px;
@@ -331,7 +342,7 @@ span {
 .FeaturedBlock_header{
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 8px;
 }
 .FeaturedBlock_head1{
    padding-left: 16px;
@@ -495,6 +506,7 @@ padding: 0px 16px;
     background: rgb(218 220 221/90%);
     box-shadow:11px 0px 20px 20px rgb(218 220 221);
 }
+
 .solutionsBlock-head1 h2{
     font-size: 24px;
     color: rgb(14, 23, 38);
@@ -1110,7 +1122,9 @@ padding: 0px 16px;
     overflow: auto;
     white-space: nowrap;
     padding:8px 0px 8px 8px;
-   
+}
+.rolerelative{
+    position: relative;
 }
 .roleBlock_elm1-i::-webkit-scrollbar{
     display: none;
@@ -1119,7 +1133,7 @@ padding: 0px 16px;
     background:white;
     border: none;
     height: 52px;
-    padding: 12px 16px 8px;
+    padding: 12px 16px 14px;
     font-size: 16px;
     width: 188px;
     text-align: start;
@@ -1130,11 +1144,29 @@ padding: 0px 16px;
     width: 220.33px;
 
 }
+.roleBlock_elm1-button-i button span{
+    font-size:16px;
+    font-family:'semi_bold';
+    letter-spacing: -0.48px;
+    color: rgb(14, 23, 38);
+}
+.roleBlock_elm1-button button span{
+    font-size:16px;
+    font-family:'semi_bold';
+    letter-spacing: -0.48px;
+    color: rgb(14, 23, 38);
+}
+.roleBlock_elm1-button-il button span{
+    font-size:16px;
+    font-family:'semi_bold';
+    letter-spacing: -0.48px;
+    color: rgb(14, 23, 38);
+}
 .roleBlock_elm1-button-i button{
     background: white;
     border: none;
     height:52px;
-    padding: 12px 16px 8px;
+    padding: 12px 16px 14px;
     font-size: 16px;
     width:188px;
     display: flex;
@@ -1149,14 +1181,27 @@ padding: 0px 16px;
 
 
 }
-.roleBlock_elm1-button-i{
+.roleBlock_elm1-button-il button{
+    background: white;
+    border: none;
+    height:52px;
+    padding: 12px 16px 14px;
+    font-size: 16px;
+    width:188px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    box-shadow:1px 2px 5px 0px rgba(0, 0, 0, 0.5) ;
+    border-top-right-radius:8px;
+    border-bottom-right-radius: 8px;
     
+    width: 220.33px;
     
 }
 .leftRight-button{
     display: flex;
     margin-top: 24px;
-    gap: 10px;
+    gap: 12px;
     margin-left: -4px;
 }
 .left::after{
@@ -1166,10 +1211,10 @@ padding: 0px 16px;
     justify-content: center;
     align-items: center;
     border: 2px solid rgb(186, 183, 183);
-    height: 40px;
-    width: 40px;
+    height: 36px;
+    width: 36px;
     font-weight: 40px;
-    font-size: 16px;
+    font-size: 18px;
     border-radius: 200px;
     color: rgb(186, 183, 183);
     font-weight: 600;
@@ -1184,9 +1229,9 @@ padding: 0px 16px;
     justify-content: center;
     align-items: center;
     border: 2px solid rgb(0, 66, 117);
-    height: 40px;
-    width: 40px;
-    font-size: 16px;
+    height: 36px;
+    width: 36px;
+    font-size: 18px;
     border-radius: 200px;
     color: rgb(0, 66, 117);
     font-weight: 600;
@@ -1201,7 +1246,7 @@ padding: 0px 16px;
     font-size: 14px;
 }
 .roleBlock_elm2{
-    padding: 24px 0px 48px;
+    padding: 26px 0px 48px;
 }
 .roleBlock_elm2-div{
     display: flex;
@@ -1794,6 +1839,12 @@ padding: 0px 16px;
     .roleBlock{
         padding-inline: 64px;
     }
+    .roleBlock_elm2-div{
+        gap: 18px;
+    }
+    .roleBlock_elm{
+        margin-bottom: 8px;
+    }
     .reagionBlok_elm{
         padding-inline: 64px;
         padding-top: 56px;
@@ -1858,6 +1909,7 @@ padding: 0px 16px;
         /* display: flex;
         justify-content: space-between; */
         padding-inline: 24px;
+        height:56px;
     }
     .dt_header-ims{
         display: flex;
@@ -2210,7 +2262,7 @@ padding: 0px 16px;
     }
     .introBlock_elm-foot-button{
         font-size: 15px;
-        padding: 8px 16px;
+        padding: 11px 16px;
         flex-basis: 19%;
         flex-grow: 0;
         flex-shrink: 0;
@@ -2226,15 +2278,19 @@ padding: 0px 16px;
         text-align: center;
         font-family: 'semi_bold';
         letter-spacing: -0.3px;
+        line-height:22px;
     }
     .introBlock_elm-foot-text{
         margin-right: 23px;
-        margin-top: 16px;
-        padding: 0px 0px 4px 4px;
+        margin-top: 11px;
+        margin-left: 4px;
+        padding: 0px 0px 4px 0px;
         /* width: 15vw; */
         display: flex;
         justify-content: flex-start;
         text-wrap: nowrap;
+        padding-bottom: 17px;
+        border-bottom:4px solid rgb(0, 66, 117)
     }
     .FeaturedBlock{
         padding-top:96px;
@@ -2336,7 +2392,7 @@ padding: 0px 16px;
         padding-right: 24px;
     }
     .gridiOuterbox{
-        background: rgb(255 255 255 / 100%);
+        /* background: rgb(255 255 255 / 100%); */
         position:absolute;
         height: 39px;
         width: 80px;
@@ -2349,7 +2405,7 @@ padding: 0px 16px;
     }
     .grediArrow button::after{
         font-family: 'mdl2';
-        font-size: 18px;
+        font-size: 12px;
         content:"" ;
         color: rgb(0, 66, 117);
         font-weight: 600;
@@ -2636,6 +2692,14 @@ padding: 0px 16px;
     .roleBlock_elm1-button-i button{
         padding:16px 24px 12px;
         height:64px;
+        border-top-left-radius: 16px;
+        border-bottom-left-radius:16px;
+    }
+    .roleBlock_elm1-button-il button{
+        padding:16px 24px 12px;
+        height:64px;
+        border-top-right-radius :16px;
+        border-bottom-right-radius:16px;
     }
     .roleBlock_elm1-i:last-child{
         border-top-right-radius: 8px;
@@ -2644,6 +2708,35 @@ padding: 0px 16px;
     .roleBlock_elm-image-i{
         width: 66.66%;
         margin-inline:auto;
+    }
+    .grediArrowLr button::after{
+        font-family: 'mdl2';
+        font-size: 18px;
+        content:"" ;
+        color: rgb(0, 66, 117);
+        font-weight: 600;
+    }
+    .grediArrowLr button{
+        border: none;
+        background: rgb(248 254 255);
+       
+       
+    
+    }
+    .grediArrowLr{
+        height: 40px;
+        width:40px;
+        border: 2px solid rgb(0, 66, 117); ;
+        border-radius: 200px;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        right: 0;
+        top: 20%;
+        bottom: 0;
+        background: rgb(248 254 255/100%);
+        box-shadow:0px -1px 20px 20px rgb(248 254 255);
     }
     /* ?????????????????????????? */
     .stepBlock{
@@ -2706,7 +2799,7 @@ padding: 0px 16px;
     .fixedBlock_elm3 span::after{
         font-family: 'mdl2';
         content: "";
-        font-size: 16px;
+        font-size: 13px;
         color: white;
     }
     .fixedBlock_elm3{
@@ -3389,12 +3482,18 @@ padding: 0px 16px;
         font-size:20px;
     }
     .roleBlock_elm-head1 h2{
-        font-size:32px;
-        letter-spacing:-1.6px;
+        font-size:40px;
+        letter-spacing:-2px;
     }
     .roleBlock_elm2-sent h3{
         font-size:24px;
         letter-spacing:-1.2px;
+    }
+    .roleBlock_elm2 {
+        padding-top: 32px;
+    }
+    .roleBlock_elm {
+        margin-bottom: 32px;
     }
     .storieBlock_elm-head1 h2{
         font-size:32px;
@@ -3402,6 +3501,9 @@ padding: 0px 16px;
     }
     .stepBlock_elm1-child-box-head h3 {
         font-size:20px;
+    }
+    .grediArrowLr{
+        display: none;
     }
    
 }
