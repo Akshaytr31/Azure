@@ -1855,9 +1855,13 @@ padding: 0px 16px;
         display: inline;
     }
     .dt_header-im{
+        /* display: flex;
+        justify-content: space-between; */
+        padding-inline: 24px;
+    }
+    .dt_header-ims{
         display: flex;
         justify-content: space-between;
-        padding-inline: 24px;
     }
     .azureHeding-i{
         display: none;
@@ -3402,9 +3406,15 @@ padding: 0px 16px;
    
 }
 @media screen and (min-width:1448px){
+    .introBlock-none-elm1{
+        padding-top: 8px;
+    }
 }
-@media screen and (min-width:1540px){
-  
+@media screen and (min-width:1600px){
+    .dt_header-ims{
+        max-width:1600px;
+        margin-inline: auto;
+    }
 }
 @media screen and (min-width:1777px){
     .footerBlock{
@@ -3412,6 +3422,24 @@ padding: 0px 16px;
     }
     #footer{
         background: rgb(244, 242, 242);
+    }
+    .dt_elms {
+        margin-left: 23px;
+    }
+    .dt_elm1-ul-li-divb{
+        padding: 13px 30px 16px 16px;
+    }
+    .dt_elms {
+        padding-right: 9px;
+    }
+    .bigScreen-ul-white{
+        margin-inline:10px
+    }
+    .bigScreen-ul-blue{
+        margin-inline: 10px;
+    }
+    .bigScreen-ul-li {
+        padding-inline: 13px;
     }
 }
     
