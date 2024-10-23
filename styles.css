@@ -1726,6 +1726,9 @@ padding: 0px 16px;
 .cover-i{
     display: flex;
 }
+.proButton a{
+    font-size: 15px;
+}
 @media screen and (min-width:540px){
     .introBlock{
         padding-inline: 64px;
@@ -2265,7 +2268,9 @@ padding: 0px 16px;
     .fn{
         border-bottom: 1px solid rgb(176, 172, 172);
     }
-
+    .introBlock-none{
+        background:#002948;
+    }
 
     .introBlock_elm-foot-text-i{
         /* margin-right: 23px; */
@@ -2606,6 +2611,9 @@ padding: 0px 16px;
     }
     .propic {
         /* aspect-ratio: 21/9; */
+    }
+    .productBlock-flex{
+        gap: 18px;
     }
     /* //////////////////////////// */
     .gatnerBlock_elm2{
@@ -2974,6 +2982,10 @@ padding: 0px 16px;
     .introBlock_elm-foot-i{
         padding-inline:0px;
     }
+    .introBlock-none-i{
+        padding-inline:0;
+
+    }
     .FeaturedBlock_header{
         padding-inline: 0px;
     }
@@ -3023,6 +3035,11 @@ padding: 0px 16px;
     .introBlock_elm-foot-i{
         width: 90%;
         margin-inline:auto;
+        max-width: 100vw;
+    }
+    .introBlock-none-i{
+        width: 90%;
+        margin-inline: auto;
         max-width: 100vw;
     }
     .introBlock_elm2{
@@ -3167,8 +3184,29 @@ padding: 0px 16px;
     .introBlock_elm-foot-i{
         max-width: 1328px;
     }
-    .featured{
+    .introBlock-none-i{
+        padding-inline: 5%;
+        width: 90%;
+        box-sizing: content-box;
         max-width: 1328px;
+    }
+    .featured{
+        width: 90%;
+        padding-inline: 5%;
+        box-sizing: content-box;
+        max-width: 1328px;
+    }
+    .solutions{
+        width: 90%;
+        padding-inline: 5%;
+        max-width: 1328px;
+        box-sizing:content-box;
+    }
+    .productBlock-i{
+        width: 90%;
+        padding-inline: 5%;
+        max-width: 1328px;
+        box-sizing: content-box;
     }
     .FeaturedBlock_Head span {
         font-size:32px;
@@ -3204,7 +3242,6 @@ padding: 0px 16px;
     }
    
     .solutions{
-        margin-inline:0;
         max-width: 1328px;
     } 
     .productBlock-i{
@@ -3217,10 +3254,12 @@ padding: 0px 16px;
     .gatnerBlock_elm{
       
     }
- 
+    .roleBlock_elm2-div{
+        gap: 25px;
+    }
     .roleBlock-i{
         max-width:1328px;
-        padding-inline: 5%;
+        
 
     }
     .storieBlock-i{
@@ -3247,6 +3286,7 @@ padding: 0px 16px;
     #social{
         max-width:1328px;
     }
+  
     .introBlock_elm1 h1{
         font-size:48px;
         letter-spacing: -2.4px;
@@ -3285,6 +3325,11 @@ padding: 0px 16px;
     .productBlock_elm-i{
         flex-direction:row;
         margin-top: 48px;
+        gap: 16px;
+        padding: 4px;
+    }
+    .productBlock_elm2-i{
+        /* padding-right: 8px; */
     }
     .productblock_elm{
         flex-basis: 22%;
@@ -3296,7 +3341,13 @@ padding: 0px 16px;
         height: 491px;
     }
     .safe_area{
-        height: 367px;
+        height: 326px;
+    }
+    .pro-sent{
+        gap: 18px;
+    }
+    .pro-sent-cont{
+        gap: 16px;
     }
     .proGrid-i{
         margin-top: 0;
@@ -3311,13 +3362,17 @@ padding: 0px 16px;
         /* width: 318px;
         height: 588.2px; */
     }
+    .proButton a {
+        padding: 12px 16px;
+    }
     .pro-sent-h3 h3{
         font-size:32px;
         letter-spacing:-1.6px;
+        line-height: 40px;
     }
     .card_promo-fg-container{
         padding: 24px;
-        width: 310px;
+        width: 318px;
     }
     .gatnerBlock_elm2-text-head h2{
         font-size:32px;
@@ -3350,5 +3405,13 @@ padding: 0px 16px;
 }
 @media screen and (min-width:1540px){
   
+}
+@media screen and (min-width:1777px){
+    .footerBlock{
+        margin-inline: auto;
+    }
+    #footer{
+        background: rgb(244, 242, 242);
+    }
 }
     
