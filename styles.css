@@ -1075,9 +1075,9 @@ padding: 0px 16px;
 }
 /* ////////////////////////// */
 .roleBlock{
-    background-image:url('img/bacground/Mobile-Interactive-Demo-BG-2x.webp') ;
+    background-image:url('img/bacground/role-bg-360x719.avif') ;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position:50% 21%;
     background-size: cover;
     padding-bottom: 40px;
     padding: 0px 16px;
@@ -2721,6 +2721,9 @@ padding: 0px 16px;
         width: 66.66%;
         margin-inline:auto;
     }
+    .roleBlock_elm-image-i{
+        padding: 24px;
+    }
     .grediArrowLr button::after{
         font-family: 'mdl2';
         font-size: 18px;
@@ -2751,6 +2754,13 @@ padding: 0px 16px;
         box-shadow:0px -1px 20px 20px rgb(248 254 255);
     }
     /* ?????????????????????????? */
+    .stepBlock{
+        background-image: url('img/bacground/step\(860\).avif');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    
+    }
     .stepBlock{
         padding-top: 96px;
         padding-bottom: 96px;
@@ -3041,6 +3051,13 @@ padding: 0px 16px;
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
+    }
+    .stepBlock{
+        background-image: url('img/bacground/step\(1084px\).avif');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      
     }
     .footer-grid{
         grid-template-columns:repeat(6,1fr);
