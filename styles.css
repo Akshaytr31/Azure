@@ -2193,9 +2193,9 @@ padding: 0px 16px;
     }
     .introBlock-none-elm1-input-i{
         border-radius: 8px;
-        border-bottom-left-radius: 5px;
-        border-bottom-right-radius: 5px;
+
         background: white;
+        overflow: hidden;
     }
     .gredient{
         height: 4px;
@@ -2676,6 +2676,7 @@ padding: 0px 16px;
         max-height: 100%;
         object-fit: cover;
         padding: 32px;
+        padding-bottom: 29px;
     }
     .storieBlock-imgList-img{
         background: white;
@@ -2884,7 +2885,14 @@ padding: 0px 16px;
 .storieBlock-imgList-img:first-child{
     border-top-left-radius: 16px;
     border-bottom-left-radius:16px;
-    border-bottom:4px solid #004275;
+    /* border-bottom:4px solid #004275; 
+    */
+    overflow:hidden;
+}
+.storie_un{
+    height: 10px;
+    background:#0195d5;
+    
 }
 .storieBlock-imgList-img:nth-child(5){
     border-top-right-radius:16px;
