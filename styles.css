@@ -2353,7 +2353,7 @@ padding: 0px 16px;
         border-bottom: 1px solid rgb(176, 172, 172);
     }
     .introBlock-none{
-        background:#002948;
+        background: linear-gradient(180deg, #002948 0%, #004275 98.96%);
     }
 
     .introBlock_elm-foot-text-i{
@@ -3392,6 +3392,9 @@ padding: 0px 16px;
     .introBlock-none-elm1{
         padding-top:2px;
     }
+    .introBlock-none-i{
+        padding-bottom: 33px;
+    }
     .o{
         max-width: 1328px;
     } 
@@ -3569,9 +3572,11 @@ padding: 0px 16px;
     }
     .introblock-none-elm{
         gap: 1px;
+        padding-top:15px;
     }
     .introBlock-none-sent{
-        gap:0px
+        gap:0px;
+       
     }
     .introBlock-none-elm1{
         padding-top:5px;
